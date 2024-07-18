@@ -21,6 +21,7 @@ class WeathersController extends Controller
         try {
             $validatedData = $request->validated();
             return $client->getGeocoding($validatedData);
+
         }catch (\Throwable $throwable){
             Log::error(__METHOD__." ".$throwable->getMessage());
             throw new ApiException();

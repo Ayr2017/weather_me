@@ -22,7 +22,7 @@ class GetGeocodeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'q' => 'required|string|regex:/^[а-яА-Яa-zA-Z].*/',
+            'q' => 'required|string|min:3|regex:/^[а-яА-Яa-zA-Z].*/',
             'limit' => 'nullable|int',
             'lang' => 'nullable|string',
             'country' => 'nullable|string',
