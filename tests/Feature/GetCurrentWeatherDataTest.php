@@ -24,7 +24,7 @@ class GetCurrentWeatherDataTest extends TestCase
         $response->assertStatus(200)
             ->assertJsonStructure([
             'data',
-            'status',
+            'status_code',
             'message',
             'errors'
         ]);
