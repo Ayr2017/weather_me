@@ -78,7 +78,7 @@ class GetGeocodeTest extends TestCase
                 }
             ],
             "errors": null,
-            "status": 200,
+            "status_code": 200,
             "message": "Ok"
         }', true));
     }

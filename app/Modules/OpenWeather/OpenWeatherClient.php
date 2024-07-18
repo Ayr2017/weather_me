@@ -59,7 +59,7 @@ final class OpenWeatherClient implements OpenWeatherContract
 
         return [
             'errors' => json_decode($response->getBody(), true),
-            'status' => $response->status(),
+            'status_code' => $response->status(),
             'data' => null,
             'message' => 'Error',
         ];
