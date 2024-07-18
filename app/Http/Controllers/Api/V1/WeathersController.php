@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Actions\OpenWeatherMap\GetCurrentWeatherDataAction;
-use App\Actions\OpenWeatherMap\GetGeocodingAction;
 use App\Exceptions\ApiException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\Weather\GetCurrentWeatherDataRequest;
